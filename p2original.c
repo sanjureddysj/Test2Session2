@@ -17,9 +17,13 @@ int is_triangle(float x1, float y1, float x2, float y2,float x3, float y3)
   int area;
   area=1/2*(x1*(y2-y3)+x2*(y3-y1)+x3*(y1-y2));
   if(area==0)
+  {
   return 0;
+  }
   else
+  {
   return 1;
+  }
 }
 
 void output(int a)
